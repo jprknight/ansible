@@ -5,7 +5,7 @@
     tasks:
       - name: Test - Set AptCacher Proxy
         copy:
-          src: /etc/ansible/files/99AptCacher
+          src: /home/jeremy/ansible/99AptCacher
           dest: /etc/apt/apt.conf.d/99AptCacher
           owner: root
           group: root
