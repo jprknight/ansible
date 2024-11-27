@@ -2,7 +2,6 @@
   - name: Test - Unset the AptCacher proxy.
     hosts: test
     become: true
-    remote_user: jeremy
     become_method: sudo
     tasks:
       - name: Unset the AptCacher proxy.
