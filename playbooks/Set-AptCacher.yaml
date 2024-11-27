@@ -1,7 +1,9 @@
 ---
   - name: Test - Set AptCacher Proxy
     hosts: test
-    become: yes
+    become: true
+    remote_user: jeremy
+    become_method: sudo
     tasks:
       - name: Test - Set AptCacher Proxy
         copy:
