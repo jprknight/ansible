@@ -1,0 +1,10 @@
+---
+  - name: Test - Unset the AptCacher proxy.
+    hosts: test
+    become: true
+    become_method: sudo
+    tasks:
+      - name: Unset the AptCacher proxy.
+        copy:
+          content: ''
+          dest: /etc/apt/apt.conf.d/99AptCacher
