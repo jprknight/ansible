@@ -1,0 +1,9 @@
+---
+  - name: Test - Set AptCacher Proxy
+    hosts: test
+    become: true
+    tasks:
+      - name: Test - Set AptCacher Proxy
+        copy:
+          src: /etc/ansible/files/99AptCacher
+          dest: /etc/apt/apt.conf.d/99AptCacher
