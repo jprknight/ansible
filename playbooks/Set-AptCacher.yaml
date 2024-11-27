@@ -2,7 +2,7 @@
   - name: Test - Set AptCacher Proxy
     hosts: test
     become: true
-    become_user: jeremy
+    become_user: root
     tasks:
       - name: Test - Set AptCacher Proxy
         copy:
